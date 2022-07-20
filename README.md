@@ -15,3 +15,4 @@ npm install
 ```
 npm start
 ```
+App will be running at `localhost:1234`
