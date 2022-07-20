@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import { sendAnalyticsEvent } from "./fuzy-api";
@@ -15,17 +15,25 @@ export const Page2Route = () => {
     };
 
     return (
-        <Container>
-            <Typography>
-                Page 2 Route
-            </Typography>
-            <Button component={Link} to="/home">
-                Go to Home
-            </Button>
-            <Button variant="contained" onClick={onClick}>
-                Send Fuzy Event
-            </Button>
-        </Container>
+        <Grid spacing={2} container direction="column" sx={{ alignContent: 'center', paddingTop: '36px' }}>
+            <Grid item>
+                <Typography variant="h3">Page 2</Typography>
+            </Grid>
+            <Grid item>
+                <Grid container spacing={2}>
+                    <Grid item>
+                        <Button component={Link} to="/home">
+                            Go to Home
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button variant="contained" onClick={onClick}>
+                            Send Fuzy Event
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
     );
 };
 

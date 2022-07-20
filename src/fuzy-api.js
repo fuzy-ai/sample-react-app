@@ -14,6 +14,4 @@ export const sendAnalyticsEvent = async (userId, eventType) => {
             user: { userId },
         }),
     });
-
-    console.log("sent event:" + JSON.stringify(eventType) + " with userId: " + userId);
 }
