@@ -4,11 +4,11 @@ import Grid from "@mui/material/Grid";
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
 import getUser from "./get-user";
-import { sendAnalyticsEvent } from "fuzy-js";
+import { sendEvent } from "fuzy-js";
 
 export const HomeRoute = () => {
     const userId = getUser();
-    sendAnalyticsEvent(userId, "/home");
+    sendEvent("/home", { userId });
 
     return (
         <Grid spacing={2} container direction="column" sx={{ alignContent: 'center', paddingTop: '36px' }}>
