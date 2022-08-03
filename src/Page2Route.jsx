@@ -3,15 +3,20 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import { sendAnalyticsEvent } from "./fuzy-api";
 import getUser from "./get-user";
+import { sendEvent } from "fuzy-js";
 
 export const Page2Route = () => {
     const userId = getUser();
-    sendAnalyticsEvent(userId, "/page2");
+    sendEvent("/page2", { userId });
 
     const onClick = () => {
-        sendAnalyticsEvent(userId, "button_click/send_fuzy_event");
+        sendEvent(
+            "button_click/send_fuzy_event",
+            { userId },
+            { button: "send_fuzy_event" },
+            ["sample"]
+        );
     };
 
     return (
