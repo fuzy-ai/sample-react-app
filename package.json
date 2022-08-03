@@ -26,7 +26,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "fuzy-js": "github:fuzy-ai/fuzy-js",
+    "fuzy-js": "github:fuzy-ai/fuzy-js#beta-1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "uuid": "^8.3.2"
