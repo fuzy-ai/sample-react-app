@@ -8,7 +8,6 @@ import { sendEvent } from "fuzy-js";
 
 export const Page2Route = () => {
     const userId = getUser();
-    sendEvent("/page2", { userId });
 
     const onClick = () => {
         sendEvent(

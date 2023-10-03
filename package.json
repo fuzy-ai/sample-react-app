@@ -22,11 +22,11 @@
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.0",
     "parcel-bundler": "^1.12.5",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.16.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "fuzy-js": "github:fuzy-ai/fuzy-js#beta-1.0.0",
+    "fuzy-js": "github:fuzy-ai/fuzy-js#tr-js-module",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "uuid": "^8.3.2"
